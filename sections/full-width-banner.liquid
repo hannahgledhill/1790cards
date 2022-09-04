@@ -1,0 +1,73 @@
+<div class="top-banner">
+    {% if section.settings.image != blank %}
+        {% assign img_src = section.settings.image.src | img_url: 'master' %}
+    {% else %}
+        {% assign img_src = collection.image.src | img_url: 'master' %}
+    {% endif %}
+    <img src="{{ img_src }}" style="object-position: {{ section.settings.image_position }};">
+</div>
+
+{% schema %}
+  {
+    "name": "Full Width Banner",
+	"tag": "section",
+	"class": "full-width-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "Optional - will use collection featured image if not specified"
+      },
+      {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "default": "center center",
+          "options": [
+              {
+                "label": "Top left",
+                "value": "left top"
+              },
+              {
+                "label": "Top center",
+                "value": "center top"
+              },
+              {
+                "label": "Top right",
+                "value": "right top"
+              },
+              {
+                "label": "Middle left",
+                "value": "left center"
+              },
+              {
+                "label": "Middle center",
+                "value": "center center"
+              },
+              {
+                "label": "Middle right",
+                "value": "right center"
+              },
+              {
+                "label": "Bottom left",
+                "value": "left bottom"
+              },
+              {
+                "label": "Bottom center",
+                "value": "center bottom"
+              },
+              {
+                "label": "Bottom right",
+                "value": "right bottom"
+              }
+  			]
+	  }
+	],
+	"presets": [
+     {
+       "name": "Full Width Banner"
+     }
+   ]
+  }
+{% endschema %}

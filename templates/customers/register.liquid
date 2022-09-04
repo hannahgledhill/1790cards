@@ -1,0 +1,75 @@
+<div class="page-width">
+  <div class="grid">
+
+    <div class="grid__item medium-up--one-half medium-up--push-one-quarter">
+      <div class="content-block text-center">
+        <h1>Create <span class="title-black">account</span></h1> 
+
+        <div class="form-vertical text-center">
+          {% form 'create_customer' %}
+
+            {{ form.errors | default_errors }}
+          
+          	<div class="private-trade-selection">
+              <input type="radio" id="private_buyer" name="customer[note][customer_type]" value="private_buyer" checked>
+              <label for="private_buyer">Private buyer</label>
+              <input type="radio" id="trade_buyer" name="customer[note][customer_type]" value="trade_buyer">
+              <label for="trade_buyer">Trade buyer</label>
+          	</div>
+
+            <label for="FirstName" class="label--hidden">{{ 'customer.register.first_name' | t }}</label>
+            <input type="text" name="customer[first_name]" id="FirstName" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autofocus>
+
+            <label for="LastName" class="label--hidden">{{ 'customer.register.last_name' | t }}</label>
+            <input type="text" name="customer[last_name]" id="LastName" placeholder="{{ 'customer.register.last_name' | t }}" {% if form.last_name %}value="{{ form.last_name }}"{% endif %}>
+          
+          	<div class="companyNameField">
+              <label for="CompanyName" class="label--hidden">Company name</label>
+              <input type="text" name="customer[note][company]" id="CompanyName" placeholder="Company name" value="">
+              
+              <label for="CompanyAddress1" class="label--hidden">Address1</label>
+              <input type="text" name="customer[note][address1]" id="CompanyAddress1" placeholder="Address 1">
+              
+              <label for="CompanyAddress2" class="label--hidden">Address2</label>
+              <input type="text" name="customer[note][address2]" id="CompanyAddress2" placeholder="Address 2">
+              
+              <label for="CompanyCity" class="label--hidden">City</label>
+              <input type="text" name="customer[note][city]" id="CompanyCity" placeholder="City" required>
+              
+              <label for="CompanyCountry" class="label--hidden">Country</label>
+              <input type="text" name="customer[note][country]" id="CompanyCoutnry" placeholder="Country">
+              
+              <label for="CompanyPostcode" class="label--hidden">Postcode</label>
+              <input type="text" name="customer[note][postcode]" id="CompanyPostcode" placeholder="Postcode">
+              
+              <label for="CompanyPhone" class="label--hidden">Phone</label>
+              <input type="text" name="customer[note][phone]" id="CompanyPhone" placeholder="Phone">
+          	</div>
+
+            <label for="Email" class="label--hidden">{{ 'customer.register.email' | t }}</label>
+            <input type="email" name="customer[email]" id="Email" class="{% if form.errors contains 'email' %} input--error{% endif %}" placeholder="{{ 'customer.register.email' | t }}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off">
+
+            <label for="CreatePassword" class="label--hidden">{{ 'customer.register.password' | t }}</label>
+            <input type="password" name="customer[password]" id="CreatePassword" class="{% if form.errors contains 'password' %} input--error{% endif %}" placeholder="{{ 'customer.register.password' | t }}">
+
+            <p>
+              <input type="submit" value="Create account" class="btn">
+            </p>
+
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('body').on('click', '#trade_buyer', function(){
+      $('.companyNameField').slideDown('fast');
+    });
+    $('body').on('click', '#private_buyer', function(){
+      $('.companyNameField').slideUp('fast');
+    });    
+  });
+</script>

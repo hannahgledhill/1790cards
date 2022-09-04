@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "banner": {
+      "type": "full-width-image-banner",
+      "settings": {
+      }
+    },
+    "page": {
+      "type": "page-section",
+      "settings": {
+      }
+    },
+    "strapline": {
+      "type": "strapline-bold",
+      "settings": {
+      }
+    },
+    "blue-strip-top": {
+      "type": "blue-strip-logo",
+      "settings": {
+      }
+    },
+    "blue-strip-bottom": {
+      "type": "blue-strip-logo",
+      "settings": {
+      }
+    },
+    "gallery": {
+      "type": "gallery",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "strapline",
+    "blue-strip-top",
+    "page",
+    "gallery",
+    "blue-strip-bottom"
+  ]
+}

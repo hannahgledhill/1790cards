@@ -1,0 +1,128 @@
+{% if customer and customer.tags contains 'trade_customer' %}
+	{% assign customer_type = 'trade' %}
+{% else %}
+	{% assign customer_type = 'private' %}
+{% endif %}
+
+<input id="accountType" type="hidden" value="{{ customer_type }}">
+
+<div class="page-width">
+  <h1>{{ 'customer.account.title' | t }}</h1>
+
+  <div class="grid">
+    <div class="grid__item medium-up--two-thirds">
+      <div class="content-block">
+        <h2>{{ 'customer.orders.title' | t }}</h2>
+
+        {% if customer_type == 'private' %}
+          {% paginate customer.orders by 20 %}
+            {% if customer.orders.size != 0 %}
+
+              <table class="responsive-table">
+                <thead>
+                  <tr>
+                    <th>{{ 'customer.orders.order_number' | t }}</th>
+                    <th>{{ 'customer.orders.date' | t }}</th>
+                    <th>{{ 'customer.orders.payment_status' | t }}</th>
+                    <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+                    <th>{{ 'customer.orders.total' | t }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for order in customer.orders %}
+                    <tr>
+                      <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
+                      <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: format: 'date' }}</td>
+                      <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+                      <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
+                      <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+
+            {% else %}
+
+              <p>{{ 'customer.orders.none' | t }}</p>
+
+            {% endif %}
+            {% if paginate.pages > 1 %}
+              <div class="pagination">
+                {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+              </div>
+            {% endif %}
+          {% endpaginate %}
+        {% else %}
+        
+        	<div id="trade-orders-container" data-user-id="{{ customer.id }}"></div>
+        	<div id="trade-orders-error">Oops! Something went wrong retrieving your orders, please refresh the page and try again.</div>
+        	<div id="trade-orders-no-orders">You haven't placed any trade orders yet.</div>
+        
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="grid__item medium-up--one-third">
+      <div class="content-block">
+        <h2>{{ 'customer.account.details' | t }}</h2>
+
+        {{ customer.default_address | format_address }}
+
+        {% if customer_type == 'private' %}
+        	<p><a href="{{ routes.account_addresses_url }}">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+        {% else %}
+        	<p>Account type: Trade</p>
+        {% endif %}
+        
+        <p><a href="{{ routes.account_logout_url }}">Log out</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  $(document).ready(function(){
+    
+    if ($('#accountType').val() == 'trade') {
+    
+      var user_id = $('#trade-orders-container').data('user-id');
+
+      $.ajax({
+        type: "POST",
+        url: "https://etempashopifyapps.co.uk/1790-cards/includes/php/get_orders/get_orders.php",
+        data: {
+          user_id: user_id
+        },
+        success: function(response){
+          //console.log(response); 
+          if (response.no_orders) {
+           	$('#trade-orders-no-orders').show(); 
+            $('#trade-orders-error').hide();
+          }
+          else {
+            $('#trade-orders-no-orders').hide();
+            $('#trade-orders-error').hide();
+            response.orders.forEach(function(order){ 
+              let order_number = document.createElement('div');
+              order_number.innerText = order.order_number;
+              $('#trade-orders-container').append(order_number);
+
+              let date = document.createElement('div');
+              date.innerText = order.date;
+              $('#trade-orders-container').append(date);
+            });
+          }
+        },
+        error: function(response){
+          console.log(response);
+          $('#trade-orders-error').show();
+        },
+        dataType: "JSON"
+      });
+      
+    }
+    
+  });
+  
+</script>

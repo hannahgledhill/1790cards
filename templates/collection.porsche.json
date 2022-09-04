@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "banner": {
+      "type": "full-width-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Gulf_Longtail_18_presentation-01.jpg",
+        "image_position": "center center"
+      }
+    },
+    "strapline": {
+      "type": "strapline-bold",
+      "settings": {
+        "bold_text": "Porsche",
+        "regular_text": "",
+        "background_colour": "#ffffff",
+        "text_colour": "#414042"
+      }
+    },
+    "product-grid": {
+      "type": "collection-section",
+      "settings": {
+      }
+    },
+    "blue-strip-bottom": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "",
+        "colour": "#10A4CE"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "strapline",
+    "product-grid",
+    "blue-strip-bottom"
+  ]
+}

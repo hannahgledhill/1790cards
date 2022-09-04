@@ -1,0 +1,46 @@
+<div class="page-width">
+  <div class="contact-section-container">
+    {% for block in section.blocks %}
+      <div class="contact-column">
+        <h3>{{ block.settings.title }}</h3>
+        <div class="rte">{{ block.settings.text }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Contact Section",
+  "class": "contact-section",
+  "max_blocks": 3,
+  "settings": [],
+  "blocks": [
+     {
+       "name": "Column",
+       "type": "column",
+       "settings": [
+         {
+           "type": "text",
+           "id": "title",
+           "label": "Title"
+         },
+		 {
+           "type": "richtext",
+           "id": "text",
+           "label": "Text"
+         }
+       ]
+     }
+   ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+

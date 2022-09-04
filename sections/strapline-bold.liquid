@@ -1,0 +1,51 @@
+<style>
+    .strapline-section-bold {
+        background-color: {{ section.settings.background_colour }};
+        color: {{ section.settings.text_colour }};
+    }
+</style>
+
+<div class="strapline-text">
+  <span class="strapline-text-bold">{{ section.settings.bold_text }}</span>
+  <span class="strapline-text-regular">{{ section.settings.regular_text }}</span>
+</div>
+
+{% schema %}
+  {
+    "name": "Strapline Bold",
+	"tag": "section",
+	"class": "strapline-section-bold",
+    "settings": [
+      {
+        "type": "text",
+        "id": "bold_text",
+        "label": "Bold Text",
+        "default": "Latest"
+      },
+	  {
+        "type": "text",
+        "id": "regular_text",
+        "label": "Regular Text",
+        "default": "Designs"
+      },
+	  {
+        "type": "color",
+        "id": "background_colour",
+        "label": "Background Colour",
+        "default": "#414042"
+      },
+	  {
+        "type": "color",
+        "id": "text_colour",
+        "label": "Text Colour",
+        "default": "#ffffff"
+      }
+  	],
+	"presets": [
+     {
+       "name": "Strapline Bold"
+     }
+   ]
+  }
+{% endschema %}
+

@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "banner": {
+      "type": "full-width-image-banner",
+      "disabled": true,
+      "settings": {
+        "image_position": "center center"
+      }
+    },
+    "strapline": {
+      "type": "strapline-bold",
+      "disabled": true,
+      "settings": {
+        "bold_text": "Latest",
+        "regular_text": "Designs"
+      }
+    },
+    "blue-strip-top": {
+      "type": "blue-strip-logo",
+      "disabled": true,
+      "settings": {
+        "text": "Selling to trade and individual customers",
+        "colour": "#10A4CE"
+      }
+    },
+    "page": {
+      "type": "page-section",
+      "settings": {
+      }
+    },
+    "gallery": {
+      "type": "gallery",
+      "disabled": true,
+      "settings": {
+        "gallery_height": "short"
+      }
+    },
+    "blue-strip-bottom": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "Selling to trade and individual customers",
+        "colour": "#10A4CE"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "strapline",
+    "blue-strip-top",
+    "page",
+    "gallery",
+    "blue-strip-bottom"
+  ]
+}

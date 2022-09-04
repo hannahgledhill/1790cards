@@ -1,0 +1,65 @@
+<div class="top-banner"><img class="image-banner" src="{{ section.settings.image.src | img_url: 'master' }}" style="object-position: {{ section.settings.image_position }};"></div>
+
+{% schema %}
+  {
+    "name": "Full Width Banner",
+	"tag": "section",
+	"class": "full-width-banner",
+    "settings": [
+	  {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "default": "center center",
+          "options": [
+              {
+                "label": "Top left",
+                "value": "left top"
+              },
+              {
+                "label": "Top center",
+                "value": "center top"
+              },
+              {
+                "label": "Top right",
+                "value": "right top"
+              },
+              {
+                "label": "Middle left",
+                "value": "left center"
+              },
+              {
+                "label": "Middle center",
+                "value": "center center"
+              },
+              {
+                "label": "Middle right",
+                "value": "right center"
+              },
+              {
+                "label": "Bottom left",
+                "value": "left bottom"
+              },
+              {
+                "label": "Bottom center",
+                "value": "center bottom"
+              },
+              {
+                "label": "Bottom right",
+                "value": "right bottom"
+              }
+  			]
+	  }
+	],
+	"presets": [
+     {
+       "name": "Full Width Banner"
+     }
+   ]
+  }
+{% endschema %}

@@ -1,0 +1,150 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "placeholder-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1969_917_presentation-01.jpg",
+            "image_position": "center center",
+            "offer_text_top": "Special Offer",
+            "offer_text_big": "Free Shipping In Uk",
+            "offer_text_small": "On orders over £200",
+            "offer_background_colour": "#10a4ce"
+          }
+        },
+        "placeholder-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/375F1_1951_presentation-01.jpg",
+            "image_position": "center center",
+            "offer_text_top": "Special Offer: Trade Customers",
+            "offer_text_big": "TRADE OFFER",
+            "offer_text_small": "Free carriage on orders over £50",
+            "offer_background_colour": "#10a4ce"
+          }
+        }
+      },
+      "block_order": [
+        "placeholder-0",
+        "placeholder-1"
+      ],
+      "settings": {
+        "hero_home_height": "small",
+        "hero_home_auto": true,
+        "hero_home_auto_speed": 3,
+        "hero_text_big": "Cool Cars",
+        "hero_text_medium": "Illustrations",
+        "hero_text_small": "Lorem ipsum dorem set alor",
+        "trade_login_text": "<p><strong>Bold text<\/strong> Some more text<\/p>"
+      }
+    },
+    "strapline": {
+      "type": "strapline-bold",
+      "settings": {
+        "bold_text": "Autografic",
+        "regular_text": "Title",
+        "background_colour": "#414042",
+        "text_colour": "#ffffff"
+      }
+    },
+    "richtext": {
+      "type": "rich-text",
+      "settings": {
+        "home_page_full_width": false,
+        "section_title": "Welcome to Autografic",
+        "text": "<p>Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p><p><\/p>",
+        "text_size": "large"
+      }
+    },
+    "collections-grid": {
+      "type": "collections-grid",
+      "blocks": {
+        "162776167635582dd7-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "porsche"
+          }
+        },
+        "162776167635582dd7-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "alfa-romeo"
+          }
+        },
+        "6f52ad2d-1eb6-4ef7-b7c0-6b2cd125ad51": {
+          "type": "collection",
+          "settings": {
+            "collection": "ferrari"
+          }
+        },
+        "162776167635582dd7-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "le-mans"
+          }
+        },
+        "e751addc-b990-42ac-9ecb-94df7021a531": {
+          "type": "collection",
+          "settings": {
+            "collection": "e-motion"
+          }
+        }
+      },
+      "block_order": [
+        "162776167635582dd7-0",
+        "162776167635582dd7-1",
+        "6f52ad2d-1eb6-4ef7-b7c0-6b2cd125ad51",
+        "162776167635582dd7-2",
+        "e751addc-b990-42ac-9ecb-94df7021a531"
+      ],
+      "settings": {
+        "stretch_collection_image": false
+      }
+    },
+    "featured-content": {
+      "type": "featured-content",
+      "settings": {
+        "title": "NEW: PORSCHE",
+        "subtext": "Shop now",
+        "link": "shopify:\/\/collections\/porsche",
+        "image": "shopify:\/\/shop_images\/IMG_3961.jpg",
+        "image_align": "center center"
+      }
+    },
+    "image-content": {
+      "type": "image-content",
+      "blocks": {
+        "image-content-0": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bee_at_show-2.jpg"
+          }
+        },
+        "image-content-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "1790 at Springfair",
+            "text": "<p>Vibrant colours and strong graphics are at the heart of 1790 Cards. Inspired by poster art of the early 20th Century, digital artist and designer, Belinda Morris has developed her own signature style that she applies to themes covering nature, the world around us and repeat patterns.<\/p><p><strong>We are thrilled that Belinda’s Escapes range of landscapes reached the finals of the 2018 Henries awards in the Best Art Range category.<\/strong><\/p><p><\/p>",
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "image-content-0",
+        "image-content-1"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "strapline",
+    "richtext",
+    "collections-grid",
+    "featured-content",
+    "image-content"
+  ]
+}

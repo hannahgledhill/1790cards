@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "banner": {
+      "type": "full-width-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1790_Cards_E36-01.jpg",
+        "image_position": "center center"
+      }
+    },
+    "strapline": {
+      "type": "strapline-bold",
+      "settings": {
+        "bold_text": "Placing",
+        "regular_text": "an order"
+      }
+    },
+    "blue-strip-top": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "Online, by email, phone or by post",
+        "colour": "#10A4CE"
+      }
+    },
+    "page": {
+      "type": "page-section",
+      "settings": {
+      }
+    },
+    "16278171615add9edb": {
+      "type": "gallery",
+      "blocks": {
+        "16278171615add9edb-0": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_1850.jpg",
+            "image_align": "center center"
+          }
+        },
+        "16278171615add9edb-1": {
+          "type": "image_block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1790_Cards_TD2-01_7bacd46a-3d93-473b-a33c-ae625d763f93.jpg",
+            "image_align": "top center"
+          }
+        },
+        "16278171615add9edb-2": {
+          "type": "image_block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/isbl_3360x840.33058298_5mle5uhv.jpg",
+            "image_align": "top center"
+          }
+        }
+      },
+      "block_order": [
+        "16278171615add9edb-0",
+        "16278171615add9edb-1",
+        "16278171615add9edb-2"
+      ],
+      "settings": {
+        "gallery_height": "short"
+      }
+    },
+    "blue-strip-bottom": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "Selling to trade and individual customers",
+        "colour": "#10A4CE"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "strapline",
+    "blue-strip-top",
+    "page",
+    "16278171615add9edb",
+    "blue-strip-bottom"
+  ]
+}

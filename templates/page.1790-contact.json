@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "banner": {
+      "type": "full-width-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_4196.jpg",
+        "image_position": "center top"
+      }
+    },
+    "strapline": {
+      "type": "strapline-bold",
+      "settings": {
+        "bold_text": "Contact",
+        "regular_text": "us"
+      }
+    },
+    "blue-strip-top": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "For more information and to place an order",
+        "colour": "#10A4CE"
+      }
+    },
+    "contact-section": {
+      "type": "contact-section",
+      "blocks": {
+        "23e8a35b-29eb-4d94-9821-78db7d504fe8": {
+          "type": "column",
+          "settings": {
+            "title": "Give us a call",
+            "text": "<p>+44 (0) 1904 448130<br\/>70 Main Street<br\/>Wheldrake<br\/>York<\/p>"
+          }
+        },
+        "32a9bb29-a4d5-4a28-96fb-09be850f6ebe": {
+          "type": "column",
+          "settings": {
+            "title": "Email Belinda",
+            "text": "<p><a href=\"mailto:belinda@1790creative.co.uk\" title=\"mailto:belinda@1790creative.co.uk\">belinda@1790creative.co.uk<\/a><\/p>"
+          }
+        },
+        "93099e16-1a84-48f5-9c5c-2aa073dae044": {
+          "type": "column",
+          "settings": {
+            "title": "Email Dave",
+            "text": "<p><a href=\"mailto:dave@1790creative.co.uk\" title=\"mailto:dave@1790creative.co.uk\">dave@1790creative.co.uk<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "23e8a35b-29eb-4d94-9821-78db7d504fe8",
+        "32a9bb29-a4d5-4a28-96fb-09be850f6ebe",
+        "93099e16-1a84-48f5-9c5c-2aa073dae044"
+      ],
+      "settings": {
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "settings": {
+      }
+    },
+    "blue-strip-bottom": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "Selling to trade and individual customers",
+        "colour": "#10A4CE"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "strapline",
+    "blue-strip-top",
+    "contact-section",
+    "contact-form",
+    "blue-strip-bottom"
+  ]
+}

@@ -1,0 +1,23 @@
+<div class="strapline-text">{{ section.settings.strapline }}</div>
+
+{% schema %}
+  {
+    "name": "Strapline",
+	"tag": "section",
+	"class": "strapline-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "strapline",
+        "label": "Strapline",
+        "default": "Design, create, inspire"
+      }
+  	],
+	"presets": [
+     {
+       "name": "Strapline"
+     }
+   ]
+  }
+{% endschema %}
+

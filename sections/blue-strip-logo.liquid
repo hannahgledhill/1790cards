@@ -1,0 +1,47 @@
+<style>
+  .logo--{{ section.id }} .b416bdbf-0e52-4813-a3f5-2fdd43f5064c {
+    fill: {{ section.settings.colour }} !important;
+  }
+</style>
+<div class="blue-strip-background" style="background-color: {{ section.settings.colour }};">
+  <div class="blue-strip-text">{{ section.settings.text }}</div>
+  <div class="square-logo logo--{{ section.id }}">{% render 'square-logo' %}</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Blue Strip",
+	"tag": "section",
+	"class": "blue-strip-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Selling to trade and individual customers"
+      },
+      {
+        "type": "radio",
+        "id": "colour",
+        "label": "Colour",
+        "options": [
+          {
+            "value": "#10A4CE",
+            "label": "Blue"
+          },
+          {
+            "value": "#EF549F",
+            "label": "Pink"
+          }
+        ],
+        "default": "#10A4CE"
+      }
+  	],
+	"presets": [
+     {
+       "name": "Blue Strip"
+     }
+   ]
+  }
+{% endschema %}
+

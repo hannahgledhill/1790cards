@@ -1,0 +1,22 @@
+<div class="collections-grid-item {% if featured_collection != empty %}filled-item{% endif %}">
+  <a href="{{ featured_collection.url }}">
+    {% if featured_collection == empty %}
+      {% assign block_title = 'homepage.onboarding.collection_title' | t %}
+      {% assign image_src = '' %}
+    {% else %}
+      {% assign block_title = featured_collection.title %}
+    {% endif %}
+
+    {% assign img_url = featured_collection.image.src | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+    <img class="lazyload"
+         data-src="{{ img_url }}"
+         data-widths="[100, 140, 180, 250, 305, 440, 610, 720, 930, 1080]"
+         data-aspectratio="{{ image.aspect_ratio }}"
+         data-sizes="auto"
+         data-parent-fit="contain"
+         data-image
+         alt="{{ image.alt | escape }}">
+    
+         <div class="collections-grid-title">{{ block_title }}</div>
+  </a>
+</div>

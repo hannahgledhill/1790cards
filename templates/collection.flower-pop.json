@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "banner": {
+      "type": "full-width-banner",
+      "settings": {
+        "image_position": "center center"
+      }
+    },
+    "strapline": {
+      "type": "strapline-bold",
+      "settings": {
+        "bold_text": "Flower",
+        "regular_text": "Pop"
+      }
+    },
+    "blue-strip-top": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "One of the Occasions ranges",
+        "colour": "#10A4CE"
+      }
+    },
+    "product-grid": {
+      "type": "collection-section",
+      "settings": {
+      }
+    },
+    "blue-strip-bottom": {
+      "type": "blue-strip-logo",
+      "settings": {
+        "text": "",
+        "colour": "#10A4CE"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "strapline",
+    "blue-strip-top",
+    "product-grid",
+    "blue-strip-bottom"
+  ]
+}

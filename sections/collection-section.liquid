@@ -1,0 +1,114 @@
+{% assign autografic = false %}
+{% if collection.metafields.custom.autografic != blank and collection.metafields.custom.autografic == true %}
+    {% assign autografic = true %}
+{% endif %}
+
+{% paginate collection.products by 1000 %}
+    {% if autografic %}
+        {% assign collection_products = collection.products | where: "type", "Autografic" %}
+        {% assign number_products = collection_products | size %}
+    {% else %}
+        {% if customer and customer.tags contains 'trade_customer' %}
+            {% assign trade_customer = true %}
+            {% assign collection_products = collection.products | where: "type", "Trade" %}
+            {% assign number_products = collection_products | size %}
+            {% if number_products == 0 %}
+            {% capture no_trade_products_message %}<div class="no_trade_products_message">{{ settings.no_trade_products_message }}</div>{% endcapture %}
+            {% endif %}
+        {% else %}
+            {% assign collection_products = collection.products | where: "type", "Private" %}
+            {% assign number_products = collection_products | size %}
+        {% endif %}
+    {% endif %}
+
+    {% assign page_limit = 20 %}
+    {% assign product_counter = page_limit %}
+
+  <div class="page-width">
+
+    <header class="page-header">
+        <h1 {% if autografic %}style="display: none;"{% endif %}>
+            {{ collection.title }}
+            {% if current_tags %}
+                &ndash; {% assign title_tags = current_tags | join: ', ' %}
+                {{ title_tags }}
+            {% endif %}
+        </h1>
+        {% if collection.description != blank %}
+          <div class="section-header__subtext rte">
+            {{ collection.description }}
+          </div>
+        {% endif %}
+
+    </header>
+
+    <div>
+      <div class="grid grid--no-gutters grid--uniform">
+
+
+        {% if trade_customer and number_products == 0 %}
+          {{ no_trade_products_message }}
+        {% endif %}
+
+
+        {% for product in collection_products limit:page_limit %}
+          <div class="grid__item small--one-half medium-up--one-fifth">
+            {% include 'product-card', product: product %}
+          </div>
+        {% endfor %}
+
+      </div>
+
+      {% if number_products > product_counter %}
+            <button class="shore-more-button btn">Show more</button>
+      {% endif %}
+    </div>
+
+
+
+        {% for i in (2..5) %}
+          {% if number_products > product_counter %}
+            <div class="grid-more">
+              <div class="grid grid--no-gutters grid--uniform">
+                {% for product in collection_products limit:page_limit offset:product_counter %}
+                  <div class="grid__item small--one-half medium-up--one-fifth">
+                    {% include 'product-card', product: product %}
+                  </div>
+                {% endfor %}
+                {% assign product_counter = product_counter | times: i %}
+              </div>
+              {% if number_products > product_counter %}
+                  <button class="shore-more-button btn">Show more</button>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+
+  </div>
+{% endpaginate %}
+
+<script>
+  $(document).ready(function() {
+    $('body').on('click', '.shore-more-button', function() {
+      $(this).hide();
+      $(this).parent().next('.grid-more').slideDown('fast');
+    });
+  });
+</script>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Collection",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

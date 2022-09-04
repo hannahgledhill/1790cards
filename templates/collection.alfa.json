@@ -1,0 +1,37 @@
+{
+    "sections": {
+        "banner": {
+            "type": "full-width-banner",
+            "settings": {
+                "image": "shopify:\/\/shop_images\/group-of-people-having-fun-together-under-the-sun-708392.webp",
+                "image_position": "center center"
+            }
+        },
+        "strapline": {
+            "type": "strapline-bold",
+            "settings": {
+                "bold_text": "Alfa",
+                "regular_text": "",
+                "background_colour": "#ffffff",
+                "text_colour": "#414042"
+            }
+        },
+        "product-grid": {
+            "type": "collection-section",
+            "settings": {}
+        },
+        "blue-strip-bottom": {
+            "type": "blue-strip-logo",
+            "settings": {
+                "text": "",
+                "colour": "#10A4CE"
+            }
+        }
+    },
+    "order": [
+        "banner",
+        "strapline",
+        "product-grid",
+        "blue-strip-bottom"
+    ]
+}

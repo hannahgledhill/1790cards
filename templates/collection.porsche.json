@@ -3,14 +3,14 @@
     "banner": {
       "type": "full-width-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Gulf_Longtail_18_presentation-01.jpg",
+        "image": "shopify:\/\/shop_images\/Hippie_Longtail_racing.jpg",
         "image_position": "center center"
       }
     },
     "strapline": {
       "type": "strapline-bold",
       "settings": {
-        "bold_text": "Porsche",
+        "bold_text": "Porsche Collection",
         "regular_text": "",
         "background_colour": "#ffffff",
         "text_colour": "#414042"

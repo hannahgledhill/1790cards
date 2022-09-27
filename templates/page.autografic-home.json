@@ -6,7 +6,7 @@
         "placeholder-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1969_917_presentation-01.jpg",
+            "image": "shopify:\/\/shop_images\/eMotion_12.jpg",
             "image_position": "center center",
             "offer_text_top": "Special Offer",
             "offer_text_big": "Free Shipping In Uk",
@@ -24,19 +24,43 @@
             "offer_text_small": "Free carriage on orders over £50",
             "offer_background_colour": "#10a4ce"
           }
+        },
+        "31fe04e7-1a11-45fd-8032-bab635764ef2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03_Nurburgring_Larrousse.jpg",
+            "image_position": "center center",
+            "offer_text_top": "Special Offers",
+            "offer_text_big": "Free Shipping In Uk",
+            "offer_text_small": "On orders of 10 or more cards",
+            "offer_background_colour": ""
+          }
+        },
+        "5861811a-7ed9-428a-be28-4191a94ca55f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mille_Mille_1948-01.jpg",
+            "image_position": "center center",
+            "offer_text_top": "Special Offers",
+            "offer_text_big": "Free Shipping In Uk",
+            "offer_text_small": "On orders of 10 or more cards",
+            "offer_background_colour": ""
+          }
         }
       },
       "block_order": [
         "placeholder-0",
-        "placeholder-1"
+        "placeholder-1",
+        "31fe04e7-1a11-45fd-8032-bab635764ef2",
+        "5861811a-7ed9-428a-be28-4191a94ca55f"
       ],
       "settings": {
         "hero_home_height": "small",
         "hero_home_auto": true,
         "hero_home_auto_speed": 3,
-        "hero_text_big": "Cool Cars",
-        "hero_text_medium": "Illustrations",
-        "hero_text_small": "Lorem ipsum dorem set alor",
+        "hero_text_big": "FINE ART",
+        "hero_text_medium": "RACE CAR PRINTS",
+        "hero_text_small": "Limited edition, hand signed.",
         "trade_login_text": "<p><strong>Bold text<\/strong> Some more text<\/p>"
       }
     },
@@ -54,7 +78,7 @@
       "settings": {
         "home_page_full_width": false,
         "section_title": "Welcome to Autografic",
-        "text": "<p>Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p><p><\/p>",
+        "text": "<p>A personal collection of my favourite racing cars and drivers from the past 50+ years of racing. Each illustration features extremely high detail and are as accurate as I can make them.<\/p><p>All prints are produced to order, individually numbered and hand signed, then mailed in strong postal tubes for you to frame and display.<\/p><p><\/p>",
         "text_size": "large"
       }
     },
@@ -106,10 +130,10 @@
     "featured-content": {
       "type": "featured-content",
       "settings": {
-        "title": "NEW: PORSCHE",
+        "title": "NEW: LE MANS 100 years",
         "subtext": "Shop now",
         "link": "shopify:\/\/collections\/porsche",
-        "image": "shopify:\/\/shop_images\/IMG_3961.jpg",
+        "image": "shopify:\/\/shop_images\/Alfa_8C_2300_header.jpg",
         "image_align": "center center"
       }
     },
@@ -119,14 +143,14 @@
         "image-content-0": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Bee_at_show-2.jpg"
+            "image": "shopify:\/\/shop_images\/917_winner_1970_rain-01.jpg"
           }
         },
         "image-content-1": {
           "type": "text_block",
           "settings": {
-            "title": "1790 at Springfair",
-            "text": "<p>Vibrant colours and strong graphics are at the heart of 1790 Cards. Inspired by poster art of the early 20th Century, digital artist and designer, Belinda Morris has developed her own signature style that she applies to themes covering nature, the world around us and repeat patterns.<\/p><p><strong>We are thrilled that Belinda’s Escapes range of landscapes reached the finals of the 2018 Henries awards in the Best Art Range category.<\/strong><\/p><p><\/p>",
+            "title": "AUTOgraphic celebrates 100 years of Le Mans",
+            "text": "<p>The first 24 hour race took place on 26-27th May 1923 on public roads around Le Mans. The winner was a blue Chenard & Walcker bearing the racing number 9, driven by André Lagache and René Léonard.<\/p><p>The 2023 race will take place on 10-11th June to celebrate 100 years of the world's greatest sports car endurance race.<\/p><p><strong>We are commemorating this landmark event with the creation of a unique series of prints, to feature all of the major winners, marques and drivers which have contributed to the rich history of Le Mans.<\/strong><\/p><p><strong>All prints will be available in a limited edition of 100 - each individually numbered and signed.<\/strong><\/p><p><\/p>",
             "align": "left"
           }
         }

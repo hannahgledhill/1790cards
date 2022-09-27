@@ -3,21 +3,23 @@
     "banner": {
       "type": "full-width-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_4196.jpg",
-        "image_position": "center top"
+        "image": "shopify:\/\/shop_images\/Porsche_917K_LM-01.jpg",
+        "image_position": "center center"
       }
     },
     "strapline": {
       "type": "strapline-bold",
       "settings": {
         "bold_text": "Contact",
-        "regular_text": "us"
+        "regular_text": "us",
+        "background_colour": "#414042",
+        "text_colour": "#ffffff"
       }
     },
     "blue-strip-top": {
       "type": "blue-strip-logo",
       "settings": {
-        "text": "For more information and to place an order",
+        "text": "For more information or to request a special order",
         "colour": "#10A4CE"
       }
     },
@@ -33,6 +35,7 @@
         },
         "32a9bb29-a4d5-4a28-96fb-09be850f6ebe": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Email Belinda",
             "text": "<p><a href=\"mailto:belinda@1790creative.co.uk\" title=\"mailto:belinda@1790creative.co.uk\">belinda@1790creative.co.uk<\/a><\/p>"

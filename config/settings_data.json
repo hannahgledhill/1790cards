@@ -105,14 +105,24 @@
           "1e1c00db-105a-4e5b-b0b4-330e78012ccc": {
             "type": "text",
             "settings": {
-              "title": "1790 Creative Ltd",
-              "text": "<p>Company Number 09110435<\/p><p>70 Main Street<\/p><p>Wheldrake, York<\/p><p>e: belinda@1790creative.co.uk<br\/>e: dave@1790creative.co.uk<\/p><p>Tel: +44(0)1904 448130<\/p>"
+              "title": "1790 Creative",
+              "text": "<p>70 Main Street<\/p><p>Wheldrake, York<\/p><p>e: belinda@1790creative.co.uk<br\/>e: dave@1790creative.co.uk<\/p><p>Tel: +44(0)1904 448130<\/p>"
             }
           },
           "linklist": {
             "type": "menu",
             "settings": {
-              "link_list": "footer"
+              "link_list": "footer",
+              "autografic_menu": false,
+              "menu_title": "Footer Menu"
+            }
+          },
+          "c4df7f37-8814-439a-bfab-602f203ac816": {
+            "type": "menu",
+            "settings": {
+              "link_list": "autografic-footer-menu",
+              "autografic_menu": true,
+              "menu_title": "Footer Menu"
             }
           },
           "social": {
@@ -126,6 +136,7 @@
         "block_order": [
           "1e1c00db-105a-4e5b-b0b4-330e78012ccc",
           "linklist",
+          "c4df7f37-8814-439a-bfab-602f203ac816",
           "social"
         ],
         "settings": {
@@ -205,7 +216,7 @@
           "promo_bar_enable": true,
           "promo_bar_text": "<p><strong>Greetings cards & gifts:<\/strong> designed in Yorkshire<\/p>",
           "promo_bar_link": "",
-          "autografic_promo_bar_text": "<p><strong>Fancy pictures<\/strong> of cars<\/p>",
+          "autografic_promo_bar_text": "<p><strong>Digital Fine Art Illustrations<\/strong> of the world's most iconic racing cars<\/p>",
           "autografic_promo_bar_link": "",
           "phone_number": "+44 (0) 1904 448130"
         }

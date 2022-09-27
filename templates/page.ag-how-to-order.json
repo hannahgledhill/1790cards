@@ -3,7 +3,7 @@
     "banner": {
       "type": "full-width-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1790_Cards_E36-01.jpg",
+        "image": "shopify:\/\/shop_images\/Ferrari_14.jpg",
         "image_position": "center center"
       }
     },
@@ -11,7 +11,9 @@
       "type": "strapline-bold",
       "settings": {
         "bold_text": "Placing",
-        "regular_text": "an order"
+        "regular_text": "an order",
+        "background_colour": "#414042",
+        "text_colour": "#ffffff"
       }
     },
     "blue-strip-top": {
@@ -32,7 +34,7 @@
         "16278171615add9edb-0": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_1850.jpg",
+            "image": "shopify:\/\/shop_images\/935_LM_winner_race.jpg",
             "image_align": "center center"
           }
         },

@@ -1,6 +1,8 @@
 {% assign autografic = false %}
 {% if page.template_suffix contains 'autografic' or page.template_suffix contains 'ag-' %}
     {% assign autografic = true %}
+{% elsif blog.handle == 'autografic-news' %}
+    {% assign autografic = true %}
 {% elsif collection and collection.metafields.custom.autografic and collection.metafields.custom.autografic == true %}
     {% assign autografic = true %}
 {% elsif product and product.type == 'Autografic' %}

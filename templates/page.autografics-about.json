@@ -3,21 +3,23 @@
     "banner": {
       "type": "full-width-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/E8_1790_Cards-01.jpg",
-        "image_position": "center top"
+        "image": "shopify:\/\/shop_images\/Porsche_17.jpg",
+        "image_position": "center center"
       }
     },
     "strapline": {
       "type": "strapline-bold",
       "settings": {
-        "bold_text": "Shaping",
-        "regular_text": "Colour"
+        "bold_text": "Racing",
+        "regular_text": "colours",
+        "background_colour": "#414042",
+        "text_colour": "#ffffff"
       }
     },
     "blue-strip-top": {
       "type": "blue-strip-logo",
       "settings": {
-        "text": "The world of 1790 cards",
+        "text": "A passion for motor racing",
         "colour": "#10A4CE"
       }
     },
@@ -32,21 +34,21 @@
         "bed8210b-54e8-47e0-a1cf-0f6eb0507dce": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1790_Cards_TD9-01.jpg",
+            "image": "shopify:\/\/shop_images\/917_PA_1969.jpg",
             "image_align": "top center"
           }
         },
         "b0375112-a01e-438c-87a4-42a9923d92f8": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1790_Cards_TD4-01.jpg",
+            "image": "shopify:\/\/shop_images\/GTO_LM_1962_Race.jpg",
             "image_align": "top center"
           }
         },
         "e24345a4-df86-4723-98b5-0d58ddc87cb4": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1790_Cards_TD10-01.jpg",
+            "image": "shopify:\/\/shop_images\/917_Sebring_71.jpg",
             "image_align": "top center"
           }
         }
